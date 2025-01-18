@@ -149,8 +149,19 @@ main {
 @media screen and (max-width:576px) {
 
     .nav-bar,
-    .nav-menu-list {
+    .nav-menu-list,
+    .feature {
         flex-direction: column;
     }
+    .feature-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .feature{
+        flex-direction: column;
+    }
+    
 }
