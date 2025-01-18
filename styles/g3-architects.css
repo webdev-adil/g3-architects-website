@@ -10,19 +10,17 @@
 
 /* shared styles */
 
-
-
 .font-type-1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .font-type-2 {
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
-.font-type-2-semi{
+.font-type-2-semi {
     font-size: 45px;
     font-weight: 600;
 }
@@ -33,7 +31,7 @@
 }
 
 .font-type-4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -43,7 +41,7 @@
 }
 
 .font-type-6 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -62,6 +60,14 @@
 
 .display-flex {
     display: flex;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 25px;
 }
 
 
@@ -87,7 +93,30 @@
     margin: 0 auto;
 }
 
+
+/* banner styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-image{
+    width: 100%;
+}
+
 /* header styles */
 .header {
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .nav-bar, .nav-menu-list{
+        flex-direction: column;
+    }
+    
 }
