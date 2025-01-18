@@ -21,8 +21,14 @@
 }
 
 .font-type-2-semi {
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 600;
+}
+
+.font-type-2-medium {
+    font-size: 2.8rem;
+    font-weight: 500;
+
 }
 
 .font-type-3 {
@@ -57,12 +63,15 @@
     color: #727272;
 }
 
+#feature-font{
+    color: #FF900E;
+}
 
 .display-flex {
     display: flex;
 }
 
-.btn-primary{
+.btn-primary {
     color: white;
     background-color: #FF900E;
     border: none;
@@ -70,6 +79,11 @@
     padding: 20px 25px;
 }
 
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* nav-bar styles */
 
@@ -95,15 +109,16 @@
 
 
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0px auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
+    padding-bottom: 45px;
 }
 
 /* header styles */
@@ -112,11 +127,30 @@
 }
 
 
+/* feature section styles */
+
+.feature {
+    align-items: center;
+    padding: 85px 61px 130px 61px;
+    gap: 73px;
+
+}
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
-    .nav-bar, .nav-menu-list{
+
+    .nav-bar,
+    .nav-menu-list {
         flex-direction: column;
     }
-    
+
 }
