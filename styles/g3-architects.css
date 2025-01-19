@@ -63,7 +63,7 @@
     color: #727272;
 }
 
-#feature-font{
+#feature-font {
     color: #FF900E;
 }
 
@@ -145,10 +145,10 @@ main {
 
 /* card section styles */
 
-.card{
+.card {
     border: 1px solid #FF900E;
     border-radius: 8px;
-    max-width: 240px;
+    width: 240px;
     height: 240px;
     justify-content: center;
     align-items: center;
@@ -156,29 +156,66 @@ main {
     margin-top: 0;
 }
 
-.fact-cards{
+.fact-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.facts-number{
-    margin-top:10px;
+.facts-number {
+    margin-top: 10px;
     margin-bottom: 5px;
 }
-.fact-name{
-    margin-bottom:20px;
+
+.fact-name {
+    margin-bottom: 20px;
     margin-top: 0px;
 }
 
-.fact-section-subtitle{
+.fact-section-subtitle {
     width: 540px;
     margin-top: 24px;
     margin-bottom: 100px;
 }
 
-.fact-section-title{
+.fact-section-title {
     margin-bottom: 0;
 }
+
+
+/* sponsor section styles */
+
+.sponsor {
+    margin: 0 auto;
+
+}
+
+.sponsor-headline {
+    margin-top: 180px;
+    margin-bottom: 24px;
+
+}
+
+.sponsor-intro {
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsor-subtitle {
+    max-width: 540px;
+
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 130px;
+}
+
+.sponsor-list img {
+    filter: grayscale(100%);
+}
+
 
 /* responsive media query */
 
@@ -189,15 +226,35 @@ main {
     .feature {
         flex-direction: column;
     }
-    .feature-image{
+
+    .feature-image,
+    .fact-cards,
+    .sponsor-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fact-cards,
+    .sponsor-list {
+        justify-items: center;
+        gap: 24px;
     }
 
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .feature{
+    .feature {
         flex-direction: column;
     }
-    
+    .fact-cards,
+    .sponsor-list {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+    .feature-description, .fact-section-description {
+        justify-items: center;
+        text-align: center;
+
+      }
+
 }
