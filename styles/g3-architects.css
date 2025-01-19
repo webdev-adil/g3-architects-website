@@ -285,7 +285,8 @@ main {
 
     .nav-bar,
     .nav-menu-list,
-    .feature {
+    .feature,
+    .full-feature-section {
         flex-direction: column;
     }
 
@@ -301,11 +302,24 @@ main {
         gap: 24px;
     }
 
+    #architect-image,
+    .footer,
+    .fact-section-subtitle {
+        width: 100%;
+    }
+
+    #experience-badge{
+        margin: 20px;
+    }
+
+
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .feature {
+    .feature,
+    .full-feature-section {
         flex-direction: column;
+        margin: 10px;
     }
 
     .fact-cards,
@@ -320,6 +334,16 @@ main {
         justify-items: center;
         text-align: center;
 
+    }
+
+    #architect-image,
+    .footer,
+    .fact-section-subtitle {
+        width: 100%;
+    }
+
+    #experience-badge{
+        margin: 50px 250px 20px 250px;
     }
 
 }
